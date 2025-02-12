@@ -1,5 +1,6 @@
 /* GENERAL */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -286,6 +287,19 @@ section {
   border-radius: 2rem;
 }
 
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.text-container {
+  padding-left: 7rem;
+  padding-right: 7rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5; 
+}
 
 .details-container {
   padding: 1.5rem;
@@ -307,15 +321,6 @@ section {
   width: 400px;
   margin: auto 0;
 }
-
-.text-container {
-  padding-left: 7rem;
-  padding-right: 7rem;
-  text-align: center;
-  font-size: 1.2rem; /* Adjust this value as needed */
-  line-height: 1.5; /* Improves readability */
-}
-
 
 /* EXPERIENCE SECTION */
 
@@ -433,3 +438,4 @@ footer {
 footer p {
   text-align: center;
 }
+
