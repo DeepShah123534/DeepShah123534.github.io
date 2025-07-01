@@ -218,6 +218,7 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
+  margin-top: 13px;
   gap: 1rem;
 }
 
@@ -281,6 +282,39 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+}
+
+.project-containers{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in a row on large screens */
+  gap: 2rem;
+  align-items: start; /* prevent height stretching */
+}
+
+.details-container.color-container {
+  background: #f9f9f9;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto; /* Let it grow based on content */
+}
+
+.details-container.color-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.details-container.color-container .project-description {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
 .about-pic {
