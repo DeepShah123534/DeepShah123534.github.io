@@ -100,4 +100,22 @@
     .text-container {
       text-align: justify;
     }
+    .project-containers {
+      grid-template-columns: 1fr;
+    }
+
   }
+
+/* @media (max-width: 1200px) {
+  .project-containers {
+    grid-template-columns: repeat(2, 1fr); /* tablets and small laptops */
+    /* flex-wrap: wrap;
+  }
+} */
+
+/* @media (max-width: 600px) {
+  .project-containers {
+    grid-template-columns: 1fr; phones */
+
+  /* }
+} */ 
